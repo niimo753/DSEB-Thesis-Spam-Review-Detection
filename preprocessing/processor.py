@@ -39,8 +39,8 @@ class BasicTextCleaning:
 
     def text_cleaning(self, texts, methods=None):
         if not methods:
-            methods = ['accent_removal', 'lowercase', 'contractions_expand', 'nice_display', 'punctuation_removal',
-                       'lemmatization', 'stopwords_removal']
+            methods = ['accent_removal', 'lowercase', 'contractions_expand', 'nice_display',
+                       'punctuation_removal', 'lemmatization', 'stopwords_removal', 'tokenization']
         if isinstance(texts, str):
             texts = [texts]
         cleaned_texts = []
